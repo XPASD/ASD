@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			table, th, td
+			{
+				border: 1px solid black;
+				border-collapse: collapse;
+			}
+		</style>
+	</head>
+	<body>
+		<form id="main" name="main" action="javascript:score();">
+			<table width="650px">
+				<tr>
+					<td colspan="6" style='font-weight:bold;'>Baron-Cohen S, Wheelwright S, Skinner R, Martin J, Clubley E (2001). "<a href="http://docs.autismresearchcentre.com/papers/2001_BCetal_AQ.pdf" target="_blank">The Autism-Spectrum Quotient (AQ): evidence from Asperger syndrome/high-functioning autism, males and females, scientists and mathematicians</a>" (PDF). J Autism Dev Disord. 31 (1): 5–17. </td>
+				</tr>
+				<tr>
+					<td colspan="2" style='font-weight:bold;'>Autism-Spectrum Quotient(AQ)</td>
+					<td colspan="4" style="text-align:center;font-weight:bold;">Check only one column</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="font-weight:bold;">&nbsp;</td>
+					<td style="text-align:center;font-weight:bold;">Definitely Agree</td>
+					<td style="text-align:center;font-weight:bold;">Slightly Agree</td>
+					<td style="text-align:center;font-weight:bold;">Slightly Disagree</td>
+					<td style="text-align:center;font-weight:bold;">Definitely Disagree</td>
+				</tr>
+				<tr>
+					<td style="font-weight:bold;">1.</td>
+					<td>I prefer to do things with others rather that on my own.</td>
+					<td style="text-align:center;"><input type="radio" name="rad1" id="rad1" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad1" id="rad1" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad1" id="rad1" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad1" id="rad1" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">2</td>
+					<td>I prefer to do things the same way over and over again.</td>
+					<td style="text-align:center;"><input type="radio" name="rad2" id="rad2" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad2" id="rad2" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad2" id="rad2" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad2" id="rad2" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">3.</td>
+					<td>If I try to imagine something, I find it very easy to create a picture in my mind.</td>
+					<td style="text-align:center;"><input type="radio" name="rad3" id="rad3" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad3" id="rad3" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad3" id="rad3" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad3" id="rad3" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">4.</td>
+					<td>I frequently get so strongly absorbed in one thing that I lose sight of other things.</td>
+					<td style="text-align:center;"><input type="radio" name="rad4" id="rad4" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad4" id="rad4" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad4" id="rad4" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad4" id="rad4" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">5.</td>
+					<td>I often notice small sounds when others do not.</td>
+					<td style="text-align:center;"><input type="radio" name="rad5" id="rad5" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad5" id="rad5" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad5" id="rad5" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad5" id="rad5" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">6. &nbsp;</td>
+					<td>I usually notice car number plates or similar strings of information.</td>
+					<td style="text-align:center;"><input type="radio" name="rad6" id="rad6" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad6" id="rad6" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad6" id="rad6" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad6" id="rad6" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">7.</td>
+					<td>Other people frequently tell me that what I've said is impolite, even though I think it is polite.</td>
+					<td style="text-align:center;"><input type="radio" name="rad7" id="rad7" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad7" id="rad7" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad7" id="rad7" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad7" id="rad7" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">8.</td>
+					<td>When I'm reading a story, I can easily imagine what the characters might look like.</td>
+					<td style="text-align:center;"><input type="radio" name="rad8" id="rad8" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad8" id="rad8" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad8" id="rad8" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad8" id="rad8" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">9.</td>
+					<td>I am fascinated by dates.</td>
+					<td style="text-align:center;"><input type="radio" name="rad9" id="rad9" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad9" id="rad9" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad9" id="rad9" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad9" id="rad9" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">10.</td>
+					<td>In a social group, I can easily keep track of several different people's conversations.</td>
+					<td style="text-align:center;"><input type="radio" name="rad10" id="rad10" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad10" id="rad10" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad10" id="rad10" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad10" id="rad10" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">11.</td>
+					<td>I find social situations easy.</td>
+					<td style="text-align:center;"><input type="radio" name="rad11" id="rad11" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad11" id="rad11" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad11" id="rad11" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad11" id="rad11" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">12.</td>
+					<td>I tend to notice details that others do not.</td>
+					<td style="text-align:center;"><input type="radio" name="rad12" id="rad12" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad12" id="rad12" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad12" id="rad12" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad12" id="rad12" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">13.</td>
+					<td>I would rather go to a library than a party.</td>
+					<td style="text-align:center;"><input type="radio" name="rad13" id="rad13" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad13" id="rad13" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad13" id="rad13" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad13" id="rad13" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">14.</td>
+					<td>I find making up stories easy.</td>
+					<td style="text-align:center;"><input type="radio" name="rad14" id="rad14" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad14" id="rad14" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad14" id="rad14" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad14" id="rad14" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">15.</td>
+					<td>I find myself drawn more strongly to people than to things.</td>
+					<td style="text-align:center;"><input type="radio" name="rad15" id="rad15" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad15" id="rad15" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad15" id="rad15" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad15" id="rad15" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">16.</td>
+					<td>I tend to have very strong interests which I get upset about if I can't pursue.</td>
+					<td style="text-align:center;"><input type="radio" name="rad16" id="rad16" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad16" id="rad16" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad16" id="rad16" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad16" id="rad16" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">17.</td>
+					<td>I enjoy social chit-chat.</td>
+					<td style="text-align:center;"><input type="radio" name="rad17" id="rad17" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad17" id="rad17" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad17" id="rad17" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad17" id="rad17" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">18.</td>
+					<td>When I talk, it isn't easy for others to get a word in edgewise.</td>
+					<td style="text-align:center;"><input type="radio" name="rad18" id="rad18" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad18" id="rad18" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad18" id="rad18" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad18" id="rad18" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">19.</td>
+					<td>I am fascinated by numbers.</td>
+					<td style="text-align:center;"><input type="radio" name="rad19" id="rad19" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad19" id="rad19" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad19" id="rad19" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad19" id="rad19" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">20.</td>
+					<td>When I'm reading a story, I find it difficult to work out the characters' intentions.</td>
+					<td style="text-align:center;"><input type="radio" name="rad20" id="rad20" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad20" id="rad20" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad20" id="rad20" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad20" id="rad20" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">21.</td>
+					<td>I don't particularly enjoy reading fiction.</td>
+					<td style="text-align:center;"><input type="radio" name="rad21" id="rad21" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad21" id="rad21" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad21" id="rad21" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad21" id="rad21" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">22.</td>
+					<td>I find it hard to make new friends.</td>
+					<td style="text-align:center;"><input type="radio" name="rad22" id="rad22" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad22" id="rad22" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad22" id="rad22" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad22" id="rad22" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">23.</td>
+					<td>I notice patterns in things all the time.</td>
+					<td style="text-align:center;"><input type="radio" name="rad23" id="rad23" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad23" id="rad23" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad23" id="rad23" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad23" id="rad23" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">24.</td>
+					<td>I would rather go to the theatre than a museum.</td>
+					<td style="text-align:center;"><input type="radio" name="rad24" id="rad24" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad24" id="rad24" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad24" id="rad24" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad24" id="rad24" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">25.</td>
+					<td>It does not upset me if my daily routine is disturbed.</td>
+					<td style="text-align:center;"><input type="radio" name="rad25" id="rad25" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad25" id="rad25" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad25" id="rad25" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad52" id="rad25" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">26.</td>
+					<td>I frequently find that I don't know how to keep a conversation going.</td>
+					<td style="text-align:center;"><input type="radio" name="rad26" id="rad26" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad26" id="rad26" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad26" id="rad26" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad26" id="rad26" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">27.</td>
+					<td>I find it easy to "read between the lines" when someone is talking to me.</td>
+					<td style="text-align:center;"><input type="radio" name="rad27" id="rad27" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad27" id="rad27" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad27" id="rad27" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad27" id="rad27" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">28.</td>
+					<td>I usually concentrate more on the whole picture, rather than the small details.</td>
+					<td style="text-align:center;"><input type="radio" name="rad28" id="rad28" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad28" id="rad28" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad28" id="rad28" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad28" id="rad28" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">29.</td>
+					<td>I am not very good at remembering phone numbers.</td>
+					<td style="text-align:center;"><input type="radio" name="rad29" id="rad29" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad29" id="rad29" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad29" id="rad29" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad29" id="rad29" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">30.</td>
+					<td>I don't usually notice small changes in a situation, or a person's appearance.</td>
+					<td style="text-align:center;"><input type="radio" name="rad30" id="rad30" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad30" id="rad30" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad30" id="rad30" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad30" id="rad30" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">31.</td>
+					<td>I know how to tell if someone listening to me is getting bored.</td>
+					<td style="text-align:center;"><input type="radio" name="rad31" id="rad31" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad31" id="rad31" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad31" id="rad31" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad31" id="rad31" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">32.</td>
+					<td>I find it easy to do more than one thing at once.</td>
+					<td style="text-align:center;"><input type="radio" name="rad32" id="rad32" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad32" id="rad32" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad32" id="rad32" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad32" id="rad32" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">33.</td>
+					<td>When I talk on the phone, I'm not sure when it's my turn to speak.</td>
+					<td style="text-align:center;"><input type="radio" name="rad33" id="rad33" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad33" id="rad33" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad33" id="rad33" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad33" id="rad33" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">34.</td>
+					<td>I enjoy doing things spontaneously.</td>
+					<td style="text-align:center;"><input type="radio" name="rad34" id="rad34" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad34" id="rad34" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad34" id="rad34" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad34" id="rad34" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">35.</td>
+					<td>I am often the last to understand the point of a joke.</td>
+					<td style="text-align:center;"><input type="radio" name="rad35" id="rad35" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad35" id="rad35" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad35" id="rad35" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad35" id="rad35" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">36.</td>
+					<td>I find it easy to work out what someone is thinking or feeling just by looking at their face.</td>
+					<td style="text-align:center;"><input type="radio" name="rad36" id="rad36" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad36" id="rad36" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad36" id="rad36" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad36" id="rad36" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">37.</td>
+					<td>If there is an interruption, I can switch back to what I was doing very quickly.</td>
+					<td style="text-align:center;"><input type="radio" name="rad37" id="rad37" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad37" id="rad37" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad37" id="rad37" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad37" id="rad37" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">38.</td>
+					<td>I am good at social chit-chat.</td>
+					<td style="text-align:center;"><input type="radio" name="rad38" id="rad38" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad38" id="rad38" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad38" id="rad38" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad38" id="rad38" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">39.</td>
+					<td>People often tell me that I keep going on and on about the same thing.</td>
+					<td style="text-align:center;"><input type="radio" name="rad39" id="rad39" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad39" id="rad39" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad39" id="rad39" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad39" id="rad39" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">40.</td>
+					<td>When I was young, I used to enjoy playing games involving pretending with other children.</td>
+					<td style="text-align:center;"><input type="radio" name="rad40" id="rad40" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad40" id="rad40" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad40" id="rad40" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad40" id="rad40" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">41.</td>
+					<td>I like to collect information about categories of things (e.g. types of car, types of bird, types of train, types of plant, etc.).</td>
+					<td style="text-align:center;"><input type="radio" name="rad41" id="rad41" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad41" id="rad41" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad41" id="rad41" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad41" id="rad41" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">42.</td>
+					<td>I find it difficult to imagine what it would be like to be someone else.</td>
+					<td style="text-align:center;"><input type="radio" name="rad42" id="rad42" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad42" id="rad42" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad42" id="rad42" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad42" id="rad42" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">43.</td>
+					<td>I like to plan any activities I participate in carefully.</td>
+					<td style="text-align:center;"><input type="radio" name="rad43" id="rad43" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad43" id="rad43" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad43" id="rad43" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad43" id="rad43" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">44.</td>
+					<td>I enjoy social occasions.</td>
+					<td style="text-align:center;"><input type="radio" name="rad44" id="rad44" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad44" id="rad44" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad44" id="rad44" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad44" id="rad44" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">45.</td>
+					<td>I find it difficult to work out people's intentions.</td>
+					<td style="text-align:center;"><input type="radio" name="rad45" id="rad45" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad45" id="rad45" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad45" id="rad45" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad45" id="rad45" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">46.</td>
+					<td>New situations make me anxious.</td>
+					<td style="text-align:center;"><input type="radio" name="rad46" id="rad46" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad46" id="rad46" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad46" id="rad46" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad46" id="rad46" value="0"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">47.</td>
+					<td>I enjoy meeting new people.</td>
+					<td style="text-align:center;"><input type="radio" name="rad47" id="rad47" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad47" id="rad47" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad47" id="rad47" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad47" id="rad47" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">48.</td>
+					<td>I am a good diplomat.</td>
+					<td style="text-align:center;"><input type="radio" name="rad48" id="rad48" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad48" id="rad48" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad48" id="rad48" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad48" id="rad48" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">49.</td>
+					<td>I am not very good at remembering people's date of birth.</td>
+					<td style="text-align:center;"><input type="radio" name="rad49" id="rad49" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad49" id="rad49" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad49" id="rad49" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad49" id="rad49" value="1"></td>
+				</tr>
+				<tr>
+					<td valign="top" style="font-weight:bold;">50.</td>
+					<td>I find it very easy to play games with children that involve pretending.</td>
+					<td style="text-align:center;"><input type="radio" name="rad50" id="rad50" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad50" id="rad50" value="0"></td>
+					<td style="text-align:center;"><input type="radio" name="rad50" id="rad50" value="1"></td>
+					<td style="text-align:center;"><input type="radio" name="rad50" id="rad50" value="1"></td>
+				</tr>
+			</table>
+			<br><input type="submit" value="Submit"><br><br>
+		</form>
+		<div id="scored" name="scored">
+
+		</div>
+	</body>
+</html>
+
+<script>
+	function score()
+	{
+		var tot = 0;
+		var socs = 0;
+		var atts = 0;
+		var attd = 0;
+		var comm = 0;
+		var imag = 0;
+		var ans_tot = 0;
+
+		var elements = document.getElementById("main").elements;
+
+		for (var i = 0, element; element = elements[i++];)
+		{
+			z = element.id;
+			if (element.type == "radio" && element.checked)
+			{
+				ans_tot += 1;
+				if (z == "rad1" || z == "rad11" || z == "rad13" || z == "rad15" || z == "rad22" || z == "rad36"
+					|| z == "rad44" || z == "rad45" || z == "rad47" || z == "rad48")
+				{
+					socs += parseInt(element.value);
+				}
+				if (z == "rad2" || z == "rad4" || z == "rad10" || z == "rad16" || z == "rad25" || z == "rad32"
+					|| z == "rad34" || z == "rad37" || z == "rad43" || z == "rad46")
+				{
+					atts += parseInt(element.value);
+				}
+				if (z == "rad5" || z == "rad6" || z == "rad9" || z == "rad12" || z == "rad19" || z == "rad23"
+					|| z == "rad28" || z == "rad29" || z == "rad30" || z == "rad49")
+				{
+					attd += parseInt(element.value);
+				}
+				if (z == "rad7" || z == "rad17" || z == "rad18" || z == "rad26" || z == "rad27" || z == "rad31"
+					|| z == "rad33" || z == "rad35" || z == "rad38" || z == "rad39")
+				{
+					comm += parseInt(element.value);
+				}
+				if (z == "rad3" || z == "rad8" || z == "rad14" || z == "rad20" || z == "rad21" || z == "rad24"
+					|| z == "rad40" || z == "rad41" || z == "rad42" || z == "rad50")
+				{
+					imag += parseInt(element.value);
+				}
+			}
+		}
+
+		tot = socs + atts + attd + comm + imag;
+
+		var result = "<table><tr><td style='font-weight:bold;' colspan='7'>Answered " + ans_tot + " out of 50 </td></tr>";
+		result += "<tr><td style='font-weight:bold;'>AQ Results</td><td style='font-weight:bold;'>Total Score</td><td style='font-weight:bold'>Social Skills</td><td style='font-weight:bold'>Attention Switching</td><td style='font-weight:bold'>Attention to Detail</td><td style='font-weight:bold'>Communication</td><td style='font-weight:bold'>Imagination</td></tr>";
+		result += "<tr><td nowrap style='font-weight:bold;'>Current test results</td>";
+		result += "<td>" + tot + "</td>" + "<td>" + socs + "</td>" + "<td>" + atts + "</td>" + "<td>" + attd + "</td>" + "<td>" + comm + "</td>" + "<td>" + imag + "</td>";
+		result += "</tr><tr><td>AQ Threshold</td><td>32</td><td colspan='5'>Above 32 indicates possible ASD</td></tr>";
+		result += "</tr><tr><td nowrap>AQ Statistical Mean</td><td>36</td><td>8</td><td>8</td><td>7</td><td>7</td><td>6</td></tr></table>";
+		document.getElementById("scored").innerHTML = result;
+	}
+</script>
